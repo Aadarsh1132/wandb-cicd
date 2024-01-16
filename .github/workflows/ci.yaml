@@ -9,7 +9,6 @@ jobs:
       - name: Hello
         run: |
           echo "Hello World"
-      - name: This will fail
-        run: exit 1;
+      
       
       
