@@ -10,6 +10,6 @@ jobs:
   trigger-demo:
     runs-on: ubuntu-latest
     steps:
-      -run: echo"Hello"
-      -
+      - run: echo "Hello"
+      
 
