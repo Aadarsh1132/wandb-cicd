@@ -20,3 +20,8 @@ jobs:
         run: echo "PAYLOAD:\n${PAYLOAD}\n"
         env:
          PAYLOAD: ${{ toJSON(github.event)}}
+      - name: print from the payload
+        run: echo "{$pusher} pushed this.Their Email is {$email}"
+        env: 
+          pusher: ${{github.event.pusher.name}}
+          email: ${{github.event.pusher.email}}
